@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'Barlow': ['Barlow', 'sans-serif'],
+      'BarlowCD': ['Barlow Condensed', 'sans-serif'],
+      'Bellefair': ['Bellefair', 'serif'],
+    }
   },
   plugins: [],
 }
