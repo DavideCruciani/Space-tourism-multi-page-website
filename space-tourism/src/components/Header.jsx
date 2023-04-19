@@ -12,9 +12,11 @@ const Header = () => {
         </div>
         
       </div>
+
       <hr className='flex-grow ml-14 -mr-7 h-px border-white border-opacity-25 z-10 hidden lg:block' />
-      <div className='bg-[hsla(0,0%,100%,.05)] lg:pl-24 md:px-10 h-24 lg:pr-44 flex justify-center shadow-[-4px_4px_16px_3px_#0b0d1766] backdrop-blur-[30px]'>
-        <nav className='flex gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
+
+      <div className='bg-[hsla(0,0%,100%,.05)] lg:pl-24 px-10 h-24 lg:pr-44 flex justify-center shadow-[-4px_4px_16px_3px_#0b0d1766] backdrop-blur-[30px]'>
+        <nav className='flex gap-8 lg:gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
 
           <li className='h-full flex items-center relative'><NavLink className={({ isActive }) => {
             return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
