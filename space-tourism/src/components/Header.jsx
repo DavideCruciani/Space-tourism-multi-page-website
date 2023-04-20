@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../assets/shared/logo.svg'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
-  return (
-    <header className='fixed flex items-center justify-between w-full top-0 z-50 left-1/2 -translate-x-1/2 lg:p-12 py-0 pl-12 pr-0'>
-      <div>
 
-        <div className='bg-white rounded-full'>
+  const [showNav, setShowNav] = useState(false)
+
+  function ShowNavbar() {
+    setShowNav(!showNav)
+    console.log(showNav)
+  }
+
+  return (
+    <header className='fixed flex justify-between w-full top-0 z-50 left-1/2 -translate-x-1/2 lg:p-12 py-0 pl-12 pr-0'>
+      <div className='py-8'>
+
+        <div className='bg-white rounded-full duration-0'>
           <img src={Logo} alt="" />
         </div>
         
@@ -15,28 +23,30 @@ const Header = () => {
 
       <hr className='flex-grow ml-14 -mr-7 h-px border-white border-opacity-25 z-10 hidden lg:block' />
 
-      <div className='bg-[hsla(0,0%,100%,.05)] lg:pl-24 px-10 h-24 lg:pr-44 flex justify-center shadow-[-4px_4px_16px_3px_#0b0d1766] backdrop-blur-[30px]'>
-        <nav className='flex gap-8 lg:gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
+      <button className={showNav ? 'block sm:hidden z-[9999] w-6 aspect-[1] bg-no-repeat bg-cover border-0 bg-[url(/src/assets/shared/icon-close.svg)] absolute right-8 top-8' : 'block sm:hidden z-[9999] w-6 aspect-[1] bg-no-repeat bg-cover border-0 bg-[url(/src/assets/shared/icon-hamburger.svg)] absolute right-8 top-8'} onClick={ShowNavbar}></button>
 
-          <li className='h-full flex items-center relative'><NavLink className={({ isActive }) => {
+      <div className={showNav ? "bg-[hsla(0,0%,100%,.05)] w-3/5 sm:w-auto lg:pl-24 sm:px-10 h-[100vh] sm:h-24 lg:pr-44 flex justify-center shadow-[-4px_4px_16px_3px_#0b0d1766] backdrop-blur-[30px] translate-x-0 ease duration-500 sm:duration-0" : "bg-[hsla(0,0%,100%,.05)] w-3/5 sm:w-auto lg:pl-24 sm:px-10 h-[100vh] sm:h-24 lg:pr-44 flex justify-center shadow-[-4px_4px_16px_3px_#0b0d1766] backdrop-blur-[30px] translate-x-full sm:translate-x-0 ease-out sm:duration-0"}>
+        <nav className='flex flex-col py-40 sm:py-0 sm:pl-0 sm:flex-row w-full gap-8 lg:gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
+
+          <li className='sm:h-full mx-auto w-4/6 flex items-center relative'><NavLink className={({ isActive }) => {
             return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
           }}
           to="/"
-          ><span className='font-bold mr-2 hidden lg:block'>00</span>HOME
+          ><span className='font-bold mr-2 block sm:hidden lg:block'>00</span>HOME
           </NavLink>
           </li>
 
-          <li className='h-full flex items-center'><NavLink className={({ isActive }) => {
+          <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
             return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
-          }} to="/destination"><span className='font-bold mr-2 hidden lg:block'>01</span>DESTINATION</NavLink></li>
+          }} to="/destination"><span className='font-bold mr-2 block sm:hidden lg:block'>01</span>DESTINATION</NavLink></li>
 
-          <li className='h-full flex items-center'><NavLink className={({ isActive }) => {
+          <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
             return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
-          }} to="/crew"><span className='font-bold mr-2 hidden lg:block'>02</span>CREW</NavLink></li>
+          }} to="/crew"><span className='font-bold mr-2 block sm:hidden lg:block'>02</span>CREW</NavLink></li>
 
-          <li className='h-full flex items-center'><NavLink className={({ isActive }) => {
+          <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
             return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
-          }} to="/technology"><span className='font-bold mr-2 hidden lg:block'>03</span>TECHNOLOGY</NavLink></li>
+          }} to="/technology"><span className='font-bold mr-2 block sm:hidden lg:block'>03</span>TECHNOLOGY</NavLink></li>
         </nav>
       </div>
     </header>
