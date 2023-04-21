@@ -15,8 +15,8 @@ const Header = () => {
     <header className='fixed flex h-0 sm:h-auto justify-between lg:items-center w-full top-0 z-50 lg:p-12 pl-12'>
       <div className='py-8'>
 
-        <div className='bg-white rounded-full duration-0'>
-          <img src={Logo} alt="" />
+        <div className='bg-white rounded-full hidden sm:block'>
+          <img src={Logo} alt="Logo" />
         </div>
         
       </div>
@@ -29,7 +29,7 @@ const Header = () => {
         <nav className='flex flex-col py-40 sm:py-0 sm:pl-0 sm:flex-row w-full gap-8 lg:gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center relative'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
           }}
           to="/"
           ><span className='font-bold mr-2 block sm:hidden lg:block'>00</span>HOME
@@ -37,15 +37,15 @@ const Header = () => {
           </li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
           }} to="/destination"><span className='font-bold mr-2 block sm:hidden lg:block'>01</span>DESTINATION</NavLink></li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
           }} to="/crew"><span className='font-bold mr-2 block sm:hidden lg:block'>02</span>CREW</NavLink></li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-2 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
           }} to="/technology"><span className='font-bold mr-2 block sm:hidden lg:block'>03</span>TECHNOLOGY</NavLink></li>
         </nav>
       </div>
