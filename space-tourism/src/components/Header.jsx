@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <header className='fixed flex justify-between w-full top-0 z-50 left-1/2 -translate-x-1/2 lg:p-12 py-0 pl-12 pr-0'>
+    <header className='fixed flex h-0 sm:h-auto justify-between lg:items-center w-full top-0 z-50 lg:p-12 pl-12'>
       <div className='py-8'>
 
         <div className='bg-white rounded-full duration-0'>
