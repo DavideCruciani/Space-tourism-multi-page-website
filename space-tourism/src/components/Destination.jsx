@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Moon from '../assets/destination/image-moon.webp';
 import data from '../data.json'
 
 const Destination = () => {
@@ -7,8 +6,8 @@ const Destination = () => {
   const [index, setIndex] = useState(0)
 
   return (
-    <main className='min-h-[100vh] w-full absolute top-0 left-0 bg-center bg-cover bg-[url("/src/assets/destination/background-destination-mobile.jpg")] sm:bg-[url("/src/assets/destination/background-destination-tablet.jpg")] lg:bg-[url("/src/assets/destination/background-destination-desktop.jpg")] pt-32 sm:pt-44 lg:pt-64 pb-6'>
-      <div className='pb-24 sm:pl-8 lg:max-w-[1240px] mx-auto text-center sm:text-left'>
+    <main className='min-h-[100vh] w-full bg-center bg-cover bg-[url("/src/assets/destination/background-destination-mobile.jpg")] sm:bg-[url("/src/assets/destination/background-destination-tablet.jpg")] lg:bg-[url("/src/assets/destination/background-destination-desktop.jpg")] pt-32 sm:pt-44 lg:pt-64 pb-6'>
+      <div className='mb-24 sm:pl-8 lg:max-w-[1240px] mx-auto text-center sm:text-left'>
         <h1 className='uppercase font-BarlowCD text-xl sm:text-3xl text-white tracking-widest'><span className='pr-6 text-[#ffffff3f] font-bold'>01</span>Pick your destination</h1>
       </div>
       <div className='lg:max-w-[1240px] w-full text-center lg:text-left mx-auto flex flex-col items-center lg:items-start lg:flex-row px-8'>
