@@ -30,7 +30,7 @@ const Destination = () => {
           </div>
           <div className='mb-6 sm:mb-0'>
             <h1 className='text-6xl sm:text-8xl uppercase font-Bellefair text-white py-6'>{data.destinations[index].name}</h1>
-            <p className='text-[#D0D6F9] text-lg sm:text-xl font-Barlow leading-9 sm:min-h-[180px] min-h-[220px]'>{data.destinations[index].description}</p>
+            <p className='text-[#D0D6F9] text-base sm:text-lg font-Barlow leading-9 sm:min-h-[180px] min-h-[220px]'>{data.destinations[index].description}</p>
           </div>
 
           <hr className='mb-8 h-px border-white border-opacity-25' />

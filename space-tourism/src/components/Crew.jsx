@@ -16,8 +16,8 @@ const Crew = () => {
       <div className='lg:max-w-[1240px] w-full text-center lg:text-left mx-auto flex flex-col items-center lg:items-start lg:flex-row px-8'>
         <div className='flex flex-col-reverse sm:flex-col'>
           <div>
-            <h2 className='text-2xl lg:text-3xl text-[#FFFFFF80] font-Bellefair uppercase'>{data.crew[indexCrew].role}</h2>
-            <h1 className='mt-4 text-5xl lg:text-6xl text-white font-Bellefair uppercase'>{data.crew[indexCrew].name}</h1>
+            <h2 className='text-base sm:text-xl lg:text-2xl text-[#FFFFFF80] font-Bellefair uppercase'>{data.crew[indexCrew].role}</h2>
+            <h1 className='mt-4 text-4xl sm:text-5xl lg:text-6xl text-white font-Bellefair uppercase'>{data.crew[indexCrew].name}</h1>
             <p className='text-[#D0D6F9] mx-auto lg:mx-0 text-base sm:text-lg font-Barlow mt-6 max-w-lg lg:max-w-md h-[150px]'>{data.crew[indexCrew].bio}</p>
           </div>
           
