@@ -1,4 +1,3 @@
-import './App.css'
 import Destination from './components/Destination'
 import Header from './components/Header'
 import Home from './components/Home'

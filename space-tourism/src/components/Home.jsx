@@ -9,9 +9,9 @@ const Home = () => {
           <h1 className='text-[5rem] sm:text-[7rem] lg:text-[9rem] text-center lg:text-left font-Bellefair uppercase'>Space</h1>
           <p className='text-[#D0D6F9] text-center lg:text-left font-Barlow text-lg'>Let's face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we'll give you a truly out of this world experience!</p>
         </div>
-        <div className='flex w-full lg:w-1/2 pt-72 sm:pt-96 lg:h-[394px] relative group'>
-          <div className='bg-white text-4xl z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:right-0 lg:-translate-x-0 lg:left-auto cursor-pointer uppercase font-Bellefair flex w-60 h-60 sm:w-72 sm:h-72 text-center items-center justify-center rounded-full'>Explore</div>
-          <div className='w-60 h-60 sm:w-72 sm:h-72 absolute bottom-0 left-1/2 -translate-x-1/2 lg:right-0 lg:-translate-x-0 lg:left-auto rounded-full bg-[#ffffff19] transition duration-[.43s] group-hover:scale-[1.3] lg:group-hover:scale-[1.5]'></div>
+        <div className='flex w-full lg:w-1/2 pt-72 sm:pt-96 lg:h-[394px] relative'>
+          <div className='bg-white text-4xl z-30 absolute bottom-0 left-1/2 -translate-x-1/2 lg:right-0 lg:-translate-x-0 lg:left-auto cursor-pointer uppercase font-Bellefair flex w-60 h-60 sm:w-72 sm:h-72 text-center items-center justify-center rounded-full peer'>Explore</div>
+          <div className='w-60 h-60 sm:w-72 sm:h-72 absolute bottom-0 left-1/2 -translate-x-1/2 lg:right-0 lg:-translate-x-0 lg:left-auto rounded-full bg-[#ffffff19] transition duration-[.43s] peer-hover:scale-[1.3] lg:peer-hover:scale-[1.5]'></div>
         </div>
       </div>
     </main>
