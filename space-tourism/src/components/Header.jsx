@@ -8,7 +8,6 @@ const Header = () => {
 
   function ShowNavbar() {
     setShowNav(!showNav)
-    console.log(showNav)
   }
 
   return (
@@ -29,7 +28,7 @@ const Header = () => {
         <nav className='flex py-40 sm:py-0 sm:pl-0 sm:flex-row w-full lg:gap-14 h-full list-none text-md tracking-widest lg:text-lg text-white font-BarlowCD'>
           <ul className='flex flex-col sm:flex-row w-full gap-8'>
           <li className='sm:h-full mx-auto w-4/6 flex items-center relative'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-t-4 border-b-white border-t-transparent h-full flex items-center" : "border-t-4 border-b-4 border-transparent full flex items-center"
           }}
           to="/"
           ><span className='font-bold mr-2 block sm:hidden lg:block'>00</span>HOME
@@ -37,15 +36,15 @@ const Header = () => {
           </li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-t-4 border-b-white border-t-transparent h-full flex items-center" : "border-t-4 border-b-4 border-transparent full flex items-center"
           }} to="/destination"><span className='font-bold mr-2 block sm:hidden lg:block'>01</span>DESTINATION</NavLink></li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-t-4 border-b-white border-t-transparent h-full flex items-center" : "border-t-4 border-b-4 border-transparent full flex items-center"
           }} to="/crew"><span className='font-bold mr-2 block sm:hidden lg:block'>02</span>CREW</NavLink></li>
 
           <li className='sm:h-full mx-auto w-4/6 flex items-center'><NavLink className={({ isActive }) => {
-            return isActive ? "border-b-4 border-white h-full flex items-center" : "border-b-2 border-transparent full flex items-center"
+            return isActive ? "border-b-4 border-t-4 border-b-white border-t-transparent h-full flex items-center" : "border-t-4 border-b-4 border-transparent full flex items-center"
           }} to="/technology"><span className='font-bold mr-2 block sm:hidden lg:block'>03</span>TECHNOLOGY</NavLink></li>
 
           </ul>
