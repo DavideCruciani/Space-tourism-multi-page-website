@@ -1,0 +1,10 @@
+.backdrop-support {
+  background: hsla(0, 0%, 0%, 0.75);
+}
+
+@supports (backdrop-filter: blur(1rem)) {
+  .backdrop-support {
+    background: hsla(0, 0%, 100%, 0.1);
+    backdrop-filter: blur(1rem);
+  }
+}
