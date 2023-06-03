@@ -15,7 +15,9 @@ const Header = () => {
     <header className='fixed flex h-0 sm:h-auto justify-between lg:items-center w-full top-0 z-50 lg:p-12 pl-12'>
       <div className='py-8'>
         <div>
-          <img className='w-10 sm:w-12' src={Logo} alt="Logo" />
+        <NavLink to="/">
+            <img className='w-10 sm:w-12' src={Logo} alt="Logo" />
+          </NavLink>
         </div>
       </div>
 
