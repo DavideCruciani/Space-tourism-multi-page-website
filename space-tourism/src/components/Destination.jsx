@@ -15,7 +15,7 @@ const Destination = () => {
         <div className='lg:w-1/2 mb-20 lg:mb-0'>
           
           <div>
-            <img className='w-[18rem] lg:w-[30rem]' src={data.destinations[index].images.webp} alt="/" />
+            <img className='w-[18rem] lg:w-[30rem]' src={data.destinations[index].images.webp} alt="Planet" />
           </div>
         </div>
 
