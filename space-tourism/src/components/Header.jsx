@@ -14,11 +14,9 @@ const Header = () => {
   return (
     <header className='fixed flex h-0 sm:h-auto justify-between lg:items-center w-full top-0 z-50 lg:p-12 pl-12'>
       <div className='py-8'>
-
-        <div className='bg-white rounded-full'>
-          <img src={Logo} alt="Logo" />
+        <div>
+          <img className='w-10 sm:w-12' src={Logo} alt="Logo" />
         </div>
-        
       </div>
 
       <hr className='flex-grow ml-14 -mr-7 h-px border-white border-opacity-25 z-10 hidden lg:block' />
